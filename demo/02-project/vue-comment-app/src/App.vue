@@ -17,7 +17,8 @@
 </template>
 
 <script>
-  import { Add, List } from './components'
+  import Add from './components/Add'
+  import List from './components/List'
 
   export default {
     data() {
