@@ -1,6 +1,6 @@
 <template>
   <ul class="todo-main">
-    <todo-item v-for="(item, index) in items" :key="index" :item="item"/>
+    <todo-item v-for="(item, index) in todos" :key="index" :item="item"/>
   </ul>
 </template>
 
@@ -9,7 +9,7 @@
 
   export default {
     props: {
-      items: {
+      todos: {
         type: Array,
         required: true
       }

@@ -2,7 +2,7 @@
   <div class="todo-container">
     <div class="todo-wrap">
       <todo-header @addTodo="addTodo"/>
-      <todo-list :items="todos"/>
+      <todo-list :todos="todos"/>
       <todo-footer :todos="todos" @checkedTodos="checkedTodos" @clearTodos="clearTodos"/>
     </div>
   </div>
