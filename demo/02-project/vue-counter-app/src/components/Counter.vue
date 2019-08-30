@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>Vue Counter</h2>
     <p>Click {{count}} times, count is {{evenOrOdd}}</p>
     <button @click="increment">Increment</button>
     <button @click="decrement">Decrement</button>

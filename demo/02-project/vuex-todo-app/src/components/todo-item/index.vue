@@ -11,8 +11,6 @@
 </template>
 
 <script>
-  import PubSub from 'pubsub-js'
-
   export default {
     data() {
       return {
@@ -22,7 +20,7 @@
     methods: {
       deleteTodo() {
         if (confirm(`确定要删除【${this.item.title}】?`)) {
-          PubSub.publish('deleteTodo', this.key)
+          this.$store.dispatch('deleteTodo', this.key)
         }
       }
     },
