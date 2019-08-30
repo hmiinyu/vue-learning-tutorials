@@ -22,11 +22,11 @@
     methods: {
       deleteTodo() {
         if (confirm(`确定要删除【${this.item.title}】?`)) {
-          PubSub.publish('deleteTodo', this.key)
+          PubSub.publish('deleteTodo', this.index)
         }
       }
     },
-    props: ['item']
+    props: ['item', 'index']
   }
 </script>
 

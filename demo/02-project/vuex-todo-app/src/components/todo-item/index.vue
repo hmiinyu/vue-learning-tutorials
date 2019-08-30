@@ -20,11 +20,11 @@
     methods: {
       deleteTodo() {
         if (confirm(`确定要删除【${this.item.title}】?`)) {
-          this.$store.dispatch('deleteTodo', this.key)
+          this.$store.dispatch('deleteTodo', this.index)
         }
       }
     },
-    props: ['item']
+    props: ['item', 'index']
   }
 </script>
 
