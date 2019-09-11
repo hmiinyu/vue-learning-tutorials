@@ -1,8 +1,6 @@
 <template>
   <div>
-    <select placeholder="区号"
-            :value="phoneInfo.areaCode"
-            @change="handleAreaCodeChange">
+    <select placeholder="区号" :value="phoneInfo.areaCode" @change="handleAreaCodeChange">
       <option value="+86">+86</option>
       <option value="+88">+88</option>
     </select>
