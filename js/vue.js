@@ -624,7 +624,7 @@ var isIOS = UA && /iphone|ipad|ipod|ios/.test(UA);
 var isChrome = UA && /chrome\/\d+/.test(UA) && !isEdge;
 
 // Firefox has a "watch" function on Object.prototype...
-var nativeWatch = ({}).watch;
+var nativeWatch = ({}).watcher;
 
 var supportsPassive = false;
 if (inBrowser) {
@@ -3207,8 +3207,8 @@ function initState (vm) {
     observe(vm._data = {}, true /* asRootData */);
   }
   if (opts.computed) { initComputed(vm, opts.computed); }
-  if (opts.watch && opts.watch !== nativeWatch) {
-    initWatch(vm, opts.watch);
+  if (opts.watcher && opts.watcher !== nativeWatch) {
+    initWatch(vm, opts.watcher);
   }
 }
 
